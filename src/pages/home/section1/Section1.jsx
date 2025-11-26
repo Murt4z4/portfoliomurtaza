@@ -7,7 +7,6 @@ const Section1 = () => {
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
   
   const roles = [
-    "Technology | Business | Design",
     "Product / Project Manager | Business Analyst",
     "Product Designer | UX/UI | MVPs & Interactive Prototypes",
     "Digital Transformation & Change Management Consultant",
