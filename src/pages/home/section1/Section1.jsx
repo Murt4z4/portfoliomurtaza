@@ -10,7 +10,6 @@ const Section1 = () => {
     "Product / Project Manager | Business Analyst",
     "Product Designer | UX/UI | MVPs & Interactive Prototypes",
     "Digital Transformation & Change Management Consultant",
-    "Full-Stack Developer | Web Apps | AI Automation & Integration",
   ];
   
   useEffect(() => {
