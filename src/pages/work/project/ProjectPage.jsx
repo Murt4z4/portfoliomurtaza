@@ -37,18 +37,11 @@ const ProjectPage = () => {
 				<h1 className="text-3xl md:text-3xl font-base mb-6 md:mb-10">
 					{project.title}
 				</h1>
-				<div className="mb-16">
-					<img
-						src={project.images[0]}
-						alt={project.title}
-						className="w-full rounded-xl shadow-md"
-					/>
-				</div>
-				<div className="mb-12 w-full flex items-center justify-between ">
-					<p className="text-lg leading-relaxed text-gray-300 mb-10 text-left max-w-2xl">
+				<div className="mb-12 w-full flex flex-col md:flex-row md:items-start md:justify-between gap-6">
+					<p className="text-lg leading-relaxed text-gray-300 text-left max-w-2xl">
 						{project.description}
 					</p>
-					<div className="flex gap-2">
+					<div className="flex flex-wrap gap-2 md:justify-end">
 						{project.prototype && (
 							<a href={project.prototype} target="_blank">
 								<button className="bg-[#343434] hover:bg-[#444] cursor-pointer text-white px-4 py-2 rounded-xl text-sm font-medium transition-colors duration-200 flex items-center gap-2">
@@ -58,7 +51,7 @@ const ProjectPage = () => {
 						)}
 
 						{project.mobile && (
-							<a href={project.prototype} target="_blank">
+							<a href={project.mobile} target="_blank">
 								<button className="bg-[#343434] hover:bg-[#444] cursor-pointer text-white px-4 py-2 rounded-xl text-sm font-medium transition-colors duration-200 flex items-center gap-2">
 									Mobile Prototype
 								</button>
@@ -73,6 +66,18 @@ const ProjectPage = () => {
 						)}
 					</div>
 				</div>
+				{project.images && project.images.length > 0 && (
+					<div className="mb-16 space-y-6">
+						{project.images.map((image, index) => (
+							<img
+								key={index}
+								src={image}
+								alt={`${project.title} image ${index + 1}`}
+								className="w-full rounded-xl shadow-md"
+							/>
+						))}
+					</div>
+				)}
 				<h2 className="text-3xl font-base mb-4">More Work</h2>
 				<motion.div
 					className="w-full min-h-[60vh] px-4 py-6 md:px-14 md:py-6"
