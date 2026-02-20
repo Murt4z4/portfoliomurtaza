@@ -8,8 +8,8 @@ const Section1 = () => {
   
   const roles = [
     "Senior Business Analyst | Product / Project Manager",
-    "Digital Transformation & Change Management Consultant",
-    "Product Designer | UX/UI | MVPs & Interactive Prototypes",
+    "AI Solutions Consultant | Digital Transformation Consultant",
+    "Product Designer | MVPs & Interactive Prototypes",
   ];
   
   useEffect(() => {
