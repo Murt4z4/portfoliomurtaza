@@ -8,7 +8,7 @@ const Section1 = () => {
   
   const roles = [
     "Senior Business Analyst | Product / Project Manager",
-    "AI Solutions Consultant | Digital Transformation Consultant",
+    "AI Solutions Consultant | Digital Transformation",
     "Product Designer | MVPs & Interactive Prototypes",
   ];
   
