@@ -124,23 +124,21 @@ const ProfileSection = () => {
 						className="text-3xl md:text-4xl font-bold mb-4">
 							About
 					</motion.h1>
-					<motion.p
+					<motion.div
 						variants={fadeUp}
-							className="text-white text-base mb-6 max-w-3xl leading-relaxed">
-							<p>
-	The first step in building something great is knowing what to create and what to avoid.
-</p><br/>
-<p>
-	I help teams connect <strong>strategy, business, design, and technology</strong> to deliver products that solve real problems. With over 15 years of experience, I have led digital transformation, enterprise system delivery, and startup MVPs in fintech, healthcare, real estate, and telecom.
-</p><br/>
-<p>
-	I work as a <strong>Product Manager, Business Analyst, UX/UI Designer, and Full-Stack Consultant.</strong> I help organizations define goals, document requirements, and manage the delivery from concept to launch. My work includes ERP and CRM systems like <strong>Oracle Fusion, SAP, Salesforce, and Odoo</strong>, along with MarTech platforms such as <strong>Salesforce Marketing Cloud and HubSpot.</strong>
-</p><br/>
-<p>
-	I have worked with clients like <strong>MUFG Pensions & Funds (£300B+ AUM)</strong>, <strong>Johnson & Johnson Innovative Medicine ($85B)</strong>, <strong>Novartis ($53B)</strong>, <strong>Vodafone UK (£45.7B)</strong>, <strong>Real Chemistry ($555M)</strong>, and <strong>Quanta Dialysis Technologies ($70M)</strong> to modernize workflows, improve user experience, and drive measurable results.
-</p><br/>
-
-					</motion.p>
+						className="text-white text-base mb-6 max-w-3xl leading-relaxed space-y-4">
+						<p>
+							Business Analyst & Product / Project Manager with 15+ years of
+							experience delivering digital transformation, enterprise software
+							development, and change management projects for global and Fortune
+							500 organizations.
+						</p>
+						<p>
+							Experience across healthcare, fintech, telecom, manufacturing, and
+							logistics. I have worked with companies like Novartis (US),
+							Vodafone (UK), and MUFG (UK).
+						</p>
+					</motion.div>
 
 					{/* Contact Buttons */}
 					<motion.div
@@ -148,9 +146,9 @@ const ProfileSection = () => {
 						className="flex flex-wrap items-center gap-4">
 						<motion.a
 							whileHover={{ scale: 1.05 }}
-							href="mailto:hello@murtaza.work"
+							href="mailto:murtaza.akbar@gmail.com"
 							className="bg-[#343434] hover:bg-[#444] text-white px-4 py-2 rounded-xl text-md font-medium transition-colors duration-200">
-							hello@murtaza.work
+							murtaza.akbar@gmail.com
 						</motion.a>
 						<motion.a
 							whileHover={{ scale: 1.05 }}
@@ -179,17 +177,76 @@ const ProfileSection = () => {
 					{/* What I Deliver Section */}
 					<motion.div variants={fadeUp} className="my-8">
 						<h3 className="text-xl md:text-2xl font-semibold text-white mb-4">
-							Services & Focus Areas
+							Core Skills
 						</h3>
-						<p className="text-white text-base mb-6 max-w-3xl leading-relaxed">
-							- Digital Transformation Consulting (ERP, CRM, AI Automation)<br/>
-							- Product Management & Business Analysis<br/>
-							- UX/UI Design & Prototyping<br/>
-							- Full-Stack & Frontend Development<br/>
-							- MarTech & CRM Integration (Salesforce, HubSpot)<br/>
-							- Process Optimization & Change Management<br/>
-							- No-Code & Low-Code MVP Development
-						</p>
+						<div className="grid grid-cols-1 md:grid-cols-4 gap-6 text-gray-300 text-sm leading-relaxed">
+							<div>
+								<h4 className="text-white font-semibold mb-2">
+									Business Analysis
+								</h4>
+								<ul className="space-y-1 list-disc list-inside">
+									<li>Requirements elicitation</li>
+									<li>Process mapping</li>
+									<li>Gap analysis</li>
+									<li>Functional specifications</li>
+									<li>User stories &amp; acceptance criteria</li>
+									<li>UAT coordination</li>
+									<li>Legacy system analysis</li>
+								</ul>
+							</div>
+							<div>
+								<h4 className="text-white font-semibold mb-2">
+									Product Management
+								</h4>
+								<ul className="space-y-1 list-disc list-inside">
+									<li>Product discovery</li>
+									<li>Roadmapping</li>
+									<li>Feature prioritization</li>
+									<li>Product lifecycle management</li>
+									<li>Stakeholder alignment</li>
+									<li>Backlog management</li>
+									<li>Go-to-market support</li>
+								</ul>
+							</div>
+							<div>
+								<h4 className="text-white font-semibold mb-2">
+									Project Management
+								</h4>
+								<ul className="space-y-1 list-disc list-inside">
+									<li>Project scoping</li>
+									<li>Sprint planning</li>
+									<li>Delivery management</li>
+									<li>Risk management</li>
+									<li>Dependency tracking</li>
+									<li>Cross-functional coordination</li>
+									<li>Timeline management</li>
+								</ul>
+							</div>
+							<div>
+								<h4 className="text-white font-semibold mb-2">
+									Product Design
+								</h4>
+								<ul className="space-y-1 list-disc list-inside">
+									<li>UX/UI design</li>
+									<li>User research</li>
+									<li>Wireframing &amp; prototyping</li>
+									<li>Information architecture</li>
+									<li>Interaction design</li>
+									<li>Design systems &amp; components</li>
+									<li>Usability testing</li>
+								</ul>
+							</div>
+						</div>
+						<div className="mt-6 text-gray-300 text-sm leading-relaxed">
+							<h4 className="text-white font-semibold mb-2">
+								Industry Knowledge &amp; Experience
+							</h4>
+							<p>
+								Fintech, Telecom, Manufacturing, Logistics, HR, Retail,
+								Ecommerce, Legacy Systems, Enterprise B2B Applications, Change
+								Management, Digital Transformation, Regulatory &amp; Compliance
+							</p>
+						</div>
 					</motion.div>
 
 					{/* Why Clients Work With Me */}
