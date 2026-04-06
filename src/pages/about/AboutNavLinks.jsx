@@ -3,10 +3,8 @@ import React from 'react';
 const AboutNavLinks = ({ activeSection, onNavClick }) => {
   const navItems = [
     { id: 'about', label: "I’m Murtaza" },
-    { id: 'expertise', label: 'Expertise' },
-    { id: 'tools', label: 'Tool Stack' },
+    { id: 'clients', label: 'Enterprise Clients' },
     { id: 'achievements', label: 'Achievements' },
-
   ];
 
   return (
