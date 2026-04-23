@@ -14,11 +14,11 @@ const projectsData = [
 	},
 	{
 		id: "brain-ai",
-		src: "/projects/brain AI.jpg",
+		src: "/projects/brain AI.png",
 		title: "AI Agents - The Future of Automation",
 		description:
 			"Building intelligent AI agents that adapt, learn, and execute tasks with precision to drive real-world impact.",
-		images: ["/projects/brain AI.jpg"],
+		images: ["/projects/brain AI.png"],
 		prototype:
 			"https://www.figma.com/proto/TdTqm9K3BJ2RX0e5AAs2io/Portfolio-Murtaza-Akbar?page-id=166%3A1639&node-id=166-1671&viewport=244%2C227%2C0.14&t=Gq3a354rVLABTQes-1&scaling=contain&content-scaling=responsive",
 	},
@@ -111,7 +111,7 @@ const projectsData = [
 		description:
 			"Shareholder and cap table management MVP.",
 		images: ["/projects/equity vantage.jpg"],
-		link: "https://fundmgmnt.netlify.app/",
+		link: "https://equitydemoappfund.vercel.app/",
 		text: true,
 	},
 	{
